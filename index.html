@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahma | Full Stack Developer | MEAN Stack Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">Rahma</div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li>
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="assets/images/about-me.jpg" alt="Rahma - Full Stack Developer" class="profile-circle">
+                </div>
+                <div class="status-badge">
+                    <i class="fas fa-circle"></i> Open for Freelance Projects
+                </div>
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Rahma</span></h1>
+                <p class="hero-subtitle">Full Stack Developer</p>
+                <p class="hero-description">Computer Science graduate specializing in building scalable web applications. I create intuitive frontend interfaces and robust backend systems with modern JavaScript technologies.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="assets/Rahma-Ezzat-FullStack-Developer.pdf" download="Rahma-Ezzat-FullStack-Developer.pdf" class="btn btn-secondary">
+        Download CV
+    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>From curiosity about how things work to building them from scratch — that's been my journey. What started with learning JavaScript has evolved into crafting full-stack applications that solve real problems. Every line of code I write is a step toward creating something that matters.</p>
+                    <p>I'm a Computer Science graduate specializing in modern JavaScript ecosystems. I don't just build applications; I architect experiences. With a deep focus on clean code, scalable systems, and intuitive user interfaces, I transform complex requirements into elegant solutions that users love.</p>
+                    <p>What drives me is the intersection of technology and creativity — finding the perfect balance between technical excellence and user delight. I'm constantly pushing my limits, learning new frameworks, and exploring innovative ways to solve challenges.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Projects Built</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Dedication</p>
+                        </div>
+                        <div class="stat">
+                            <h3>Full Stack</h3>
+                            <p>Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Full-stack solutions built with modern technologies</p>
+            
+            <div class="projects-grid">
+                <!-- FitTrack Project -->
+                <div class="project-card" onclick="navigateToProject('fittrack')">
+                    <div class="project-image">
+                        <img src="assets/images/fittrack-project.jpg.png" alt="FitTrack Fitness App" onerror="this.src='assets/images/project-placeholder.svg'">
+                        <div class="tech-stack-overlay">
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">Responsive</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>FitTrack</h3>
+                        <p>A fully responsive fitness tracking application built with vanilla JavaScript, featuring workout logging, meal tracking, progress visualization, and mobile-optimized interface for on-the-go fitness management.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                        </div>
+                        <a href="fitness-app/index.html" class="btn btn-secondary">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Analytics Pro Project -->
+                <div class="project-card" onclick="navigateToProject('analytics')">
+                    <div class="project-image">
+                        <img src="assets/images/analytics-project.jpg.png" alt="Analytics Pro Dashboard" onerror="this.src='assets/images/project-placeholder.svg'">
+                        <div class="tech-stack-overlay">
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">Chart.js</span>
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Analytics Pro</h3>
+                        <p>A comprehensive data visualization dashboard built with Chart.js, featuring real-time analytics, multiple chart types, interactive filters, and downloadable reports for business intelligence.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Chart.js</span>
+                            <span class="tag">Data Visualization</span>
+                        </div>
+                        <a href="dashboard/index.html" class="btn btn-secondary">View Project</a>
+                    </div>
+                </div>
+
+
+                <!-- Mood Tracker Project -->
+                <div class="project-card" onclick="navigateToProject('moodtracker')">
+                    <div class="project-image">
+                        <img src="assets/images/mood-tracker-app.png" alt="Mood Tracker App Solution" onerror="this.src='assets/images/project-placeholder.svg'">
+                        <div class="tech-stack-overlay">
+                            <span class="tech-badge">Angular 17+</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">SCSS</span>
+                            <span class="tech-badge">Glassmorphism</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Mood Tracker</h3>
+                        <p>A modern Angular application for tracking emotional well-being with daily mood logging, data visualization, glassmorphism UI design, and reactive state management for seamless user experience.</p>
+                        <div class="project-tags">
+                            <span class="tag">Angular 17+</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">SCSS</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <div style="display: flex; gap: 10px; margin-bottom: 1rem;">
+                            <a href="https://mood-tracker-app-xi.vercel.app/" target="_blank" class="btn btn-primary" style="flex: 1; text-align: center; font-size: 0.9rem; padding: 10px 16px;">Live Demo</a>
+                            <a href="https://github.com/rahmaelnaqeb-ctrl/mood-tracker-app" target="_blank" class="btn btn-secondary" style="flex: 1; text-align: center; font-size: 0.9rem; padding: 10px 16px;">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="section-subtitle">Expertise across the full stack</p>
+            
+            <div class="skills-grid">
+                <!-- Backend Development -->
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Node.js</span>
+                        <span class="skill-pill">Express.js</span>
+                        <span class="skill-pill">MongoDB</span>
+                        <span class="skill-pill">Mongoose</span>
+                        <span class="skill-pill">RESTful APIs</span>
+                        <span class="skill-pill">JWT Auth</span>
+                        <span class="skill-pill">Socket.io</span>
+                    </div>
+                </div>
+
+                <!-- Frontend Development -->
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Angular</span>
+                        <span class="skill-pill">React</span>
+                        <span class="skill-pill">HTML5</span>
+                        <span class="skill-pill">CSS3</span>
+                        <span class="skill-pill">SCSS</span>
+                        <span class="skill-pill">JavaScript</span>
+                        <span class="skill-pill">TypeScript</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Frameworks -->
+                <div class="skill-category">
+                    <h3>Tools & Frameworks</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Git & GitHub</span>
+                        <span class="skill-pill">VS Code</span>
+                        <span class="skill-pill">Postman</span>
+                        <span class="skill-pill">Tailwind CSS</span>
+                        <span class="skill-pill">Chart.js</span>
+                        <span class="skill-pill">npm</span>
+                        <span class="skill-pill">Webpack</span>
+                    </div>
+                </div>
+
+                <!-- Design & UX -->
+                <div class="skill-category">
+                    <h3>Design & UX</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">UI Design</span>
+                        <span class="skill-pill">UX Research</span>
+                        <span class="skill-pill">Prototyping</span>
+                        <span class="skill-pill">Wireframing</span>
+                        <span class="skill-pill">User Testing</span>
+                        <span class="skill-pill">Accessibility</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="underline"></div>
+            <p class="section-subtitle">I'm currently open to new opportunities. Whether you have a question, a project idea, or just want to say hi — feel free to reach out!</p>
+
+            <div class="card-container">
+                <a href="mailto:rahma.elnaqeb@gmail.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <span>rahma.elnaqeb@gmail.com</span>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/rahma-e-96244938b/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                    <i class="fas fa-arrow-up-right"></i>
+                </a>
+
+                <a href="https://github.com/rahmaelnaqeb-ctrl" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                    <i class="fas fa-arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Rahma. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Project Navigation (for Angular Router integration)
+        function navigateToProject(projectName) {
+            console.log('Navigating to project:', projectName);
+            // This will be replaced with Angular Router in your actual implementation
+            // router.navigate(['/projects', projectName]);
+        }
+    </script>
+</body>
+</html>
